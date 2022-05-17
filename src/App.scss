@@ -1,0 +1,8 @@
+@import 'scss/colors';
+@import 'scss/variables';
+
+.main {
+  background-color: $background-color;
+  height: $background-height;
+  padding: 33px 42px 38px 26.57px;
+}

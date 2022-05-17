@@ -1,0 +1,28 @@
+@import '../../scss/mixins';
+
+.dashboardnavbar-wrapper {
+  @include default-divider;
+}
+
+.dashboard {
+  height: 100%;
+
+  .card-wrapper {
+    @include default-divider;
+    justify-content: space-between;
+    padding-bottom: 3%;
+
+    &__first {
+      padding-bottom: 10%;
+    }
+  }
+
+  &-left {
+    background-color: blue;
+    padding: 15px;
+  }
+  &-right {
+    background-color: red;
+    padding: 15px;
+  }
+}

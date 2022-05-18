@@ -1,11 +1,11 @@
 import './style.scss'
 
-const Card = () => {
+const SimpleCard = () => {
   return (
     <div className="card">
-      Card
+      SimpleCard
     </div>
   )
 }
 
-export default Card
+export default SimpleCard

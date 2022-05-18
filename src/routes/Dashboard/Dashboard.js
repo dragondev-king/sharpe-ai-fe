@@ -2,7 +2,9 @@ import { Grid } from "@material-ui/core"
 
 import Header from "../../components/Header"
 import Navbar from "../../components/Navbar"
-import Card from "../../components/Card"
+import SimpleCard from "./components/SimpleCard"
+import TotalViewChart from "./components/TotalViewChart"
+import HistoryChart from './components/HistoryChart'
 import './style.scss'
 
 const Dashboard = () => {
@@ -15,19 +17,19 @@ const Dashboard = () => {
           <Grid item xs={12} md={7}>
             <div className="dashboard dashboard-left">
               <div className="card-wrapper card-wrapper__first">
-                <Card />
-                <Card />
+                <SimpleCard />
+                <SimpleCard />
               </div>
               <div className="card-wrapper">
-                <Card />
-                <Card />
+                <SimpleCard />
+                <SimpleCard />
               </div>
               <div className="card-wrapper">
-                <Card />
-                <Card />
+                <SimpleCard />
+                <SimpleCard />
               </div>
               <div>
-                Chart viewer
+                <TotalViewChart />
               </div>
             </div>
           </Grid>
@@ -35,10 +37,11 @@ const Dashboard = () => {
             <div className="dashboard dashboard-right">
               Statistics
               <div className="card-wrapper">
-                <Card />
-                <Card />
+                <SimpleCard />
+                <SimpleCard />
               </div>
-
+              <HistoryChart />
+              <HistoryChart />
             </div>
           </Grid>
         </Grid>

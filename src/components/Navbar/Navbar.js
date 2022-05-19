@@ -2,6 +2,7 @@ import { useCallback, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { MenuItem, MenuList } from '@material-ui/core'
 
+import SocialIcons from '../SocialIcons'
 import './style.scss'
 import { ReactComponent as CategoryIcon } from '../../assets/category.svg'
 import { ReactComponent as FolderIcon } from '../../assets/folder.svg'
@@ -37,6 +38,7 @@ const Navbar = () => {
         <MenuItem component={Link} to='/indices'><FolderIcon className='menuicon' /><span>Indices</span></MenuItem>
         <MenuItem component={Link} to='/feedback'><ChatIcon className='menuicon' /><span>Issue/Feedback</span></MenuItem>
       </MenuList>
+      <SocialIcons />
     </div>
   )
 }

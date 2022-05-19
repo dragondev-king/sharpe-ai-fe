@@ -6,14 +6,14 @@ import SimpleCard from "./components/SimpleCard"
 import TotalViewChart from "./components/TotalViewChart"
 import HistoryChart from './components/HistoryChart'
 import './style.scss'
-import { ReactComponent as DepositIcon } from '../../assets/deposit.svg'
-import { ReactComponent as VaultEarningIcon } from '../../assets/vault-earning.svg'
-import { ReactComponent as TotalNetWorthIcon } from '../../assets/total-net-worth.svg'
-import { ReactComponent as TotalWorthIcon } from '../../assets/total-worth.svg'
-import { ReactComponent as ProjectedAPYIcon } from '../../assets/projected-apy.svg'
-import { ReactComponent as ActivePositionsIcon } from '../../assets/active-positions.svg'
-import { ReactComponent as VaultsIcon } from '../../assets/vaults.svg'
-import { ReactComponent as TotalValueLockedIcon } from '../../assets/total-value-locked.svg'
+import { ReactComponent as DepositIcon } from '../../assets/svgs/deposit.svg'
+import { ReactComponent as VaultEarningIcon } from '../../assets/svgs/vault-earning.svg'
+import { ReactComponent as TotalNetWorthIcon } from '../../assets/svgs/total-net-worth.svg'
+import { ReactComponent as TotalWorthIcon } from '../../assets/svgs/total-worth.svg'
+import { ReactComponent as ProjectedAPYIcon } from '../../assets/svgs/projected-apy.svg'
+import { ReactComponent as ActivePositionsIcon } from '../../assets/svgs/active-positions.svg'
+import { ReactComponent as VaultsIcon } from '../../assets/svgs/vaults.svg'
+import { ReactComponent as TotalValueLockedIcon } from '../../assets/svgs/total-value-locked.svg'
 
 
 const Dashboard = () => {

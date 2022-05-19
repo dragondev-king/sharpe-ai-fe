@@ -4,10 +4,10 @@ import { MenuItem, MenuList } from '@material-ui/core'
 
 import SocialIcons from '../SocialIcons'
 import './style.scss'
-import { ReactComponent as CategoryIcon } from '../../assets/category.svg'
-import { ReactComponent as FolderIcon } from '../../assets/folder.svg'
-import {ReactComponent as ChatIcon } from '../../assets/chat.svg'
-import { ReactComponent as HomeIcon } from '../../assets/home.svg'
+import { ReactComponent as CategoryIcon } from '../../assets/svgs/category.svg'
+import { ReactComponent as FolderIcon } from '../../assets/svgs/folder.svg'
+import {ReactComponent as ChatIcon } from '../../assets/svgs/chat.svg'
+import { ReactComponent as HomeIcon } from '../../assets/svgs/home.svg'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)

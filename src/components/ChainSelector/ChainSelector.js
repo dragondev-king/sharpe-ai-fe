@@ -1,11 +1,11 @@
 import { useState, useCallback } from 'react'
 import { MenuItem, Select } from '@material-ui/core'
 import './style.scss'
-import EthereumLogo from '../../assets/ethereum-logo.svg'
-import FantomLogo from '../../assets/fantom-logo.svg'
-import PolygonLogo from '../../assets/polygon-logo.svg'
-import BNBLogo from '../../assets/bsc-logo.svg'
-import AvancheLogo from '../../assets/avalanche-logo.svg'
+import EthereumLogo from '../../assets/svgs/ethereum-logo.svg'
+import FantomLogo from '../../assets/svgs/fantom-logo.svg'
+import PolygonLogo from '../../assets/svgs/polygon-logo.svg'
+import BNBLogo from '../../assets/svgs/bsc-logo.svg'
+import AvancheLogo from '../../assets/svgs/avalanche-logo.svg'
 
 const ChainSelector = () => {
   const [chain, setChain] = useState('ethereum')

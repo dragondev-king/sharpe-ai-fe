@@ -1,7 +1,7 @@
 import ChainSelector from '../ChainSelector'
 import ConnectButton from '../ConnectButton'
 import './style.scss'
-import { ReactComponent as Logo } from '../../assets/logo.svg'
+import { ReactComponent as Logo } from '../../assets/svgs/logo.svg'
 
 const Header = () => {
   return (

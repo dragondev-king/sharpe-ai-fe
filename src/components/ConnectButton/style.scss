@@ -1,0 +1,14 @@
+.connect-button {
+  box-sizing: border-box;
+  background: #1C1C33;
+  border: 2px solid;
+  box-shadow: 0px 3px 7px 0px #13111A24;
+  border-radius: 12px;
+  height: 36px;
+  color: white !important;
+  font-size: 15px;
+  // border-image: linear-gradient(91.02deg, #6F86FF 0.88%, #B372CE 49.31%, #FF7586 100.87%);
+  &:hover {
+    cursor: pointer;
+  }
+}

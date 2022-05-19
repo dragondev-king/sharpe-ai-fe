@@ -1,5 +1,5 @@
 import { useState, useCallback } from 'react'
-import { MenuItem, Select, SvgIcon } from '@material-ui/core'
+import { MenuItem, Select } from '@material-ui/core'
 import './style.scss'
 import EthereumLogo from '../../assets/ethereum-logo.svg'
 import FantomLogo from '../../assets/fantom-logo.svg'

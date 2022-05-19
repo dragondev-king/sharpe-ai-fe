@@ -16,6 +16,8 @@
   background: linear-gradient(91.02deg, #6F86FF 0.88%, #B372CE 49.31%, #FF7586 100.87%);
   background-origin: border-box;
   box-shadow: inset 0 100px 10px $background-color;
+  z-index: 99;
+  
   &:hover {
     cursor: pointer;
   }

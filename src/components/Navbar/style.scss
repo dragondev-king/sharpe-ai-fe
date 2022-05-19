@@ -3,11 +3,15 @@
 
 .navbar {
   width: $navbar-width;
-  height: $navbar-height;
-  background: url('../../assets/navbar-under-back.svg');
+  min-height: $navbar-height;
+  padding-left: 2%;
 
   a {
     text-decoration: none;
+
+    &:hover {
+      background-color: transparent !important;
+    }
   }
 
   .menuicon {
@@ -16,6 +20,9 @@
 
   .MuiMenuItem-root {
     padding: 20px 0px 20px 10px !important;
+    &:hover {
+      background-color: transparent !important;
+    }
     
     .MuiSelect-icon {
       position: initial;

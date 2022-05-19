@@ -1,16 +1,16 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import Dashboard from './Dashboard'
-import Taurus from './Taurus'
-import Phantom from './Phantom'
+import Indices from './Indices'
+import Stratigies from './Stratigies'
 
 const Main = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path='/dashboard' element={<Dashboard />} />
-        <Route path='/taurus' element={<Taurus />} />
-        <Route path='/phantom' element={<Phantom />} />
+        <Route path='/indices' element={<Indices />} />
+        <Route path='/stratigies' element={<Stratigies />} />
         <Route path='*' element={<Dashboard />}/>
       </Routes>
     </BrowserRouter>

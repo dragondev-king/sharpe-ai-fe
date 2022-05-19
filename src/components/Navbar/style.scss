@@ -5,6 +5,14 @@
   width: $navbar-width;
   height: $navbar-height;
 
+  a {
+    text-decoration: none;
+  }
+
+  .menuicon {
+    fill: $dashboard-text-color;
+  }
+
   .MuiMenuItem-root {
     padding: 20px 0px 20px 10px !important;
     

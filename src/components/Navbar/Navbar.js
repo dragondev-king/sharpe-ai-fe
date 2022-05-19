@@ -1,5 +1,6 @@
 import { useCallback, useState } from 'react'
 import { MenuItem, MenuList } from '@material-ui/core'
+
 import './style.scss'
 import { ReactComponent as CategoryIcon } from '../../assets/category.svg'
 import { ReactComponent as FolderIcon } from '../../assets/folder.svg'
@@ -15,9 +16,9 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <MenuList>
-        <MenuItem><HomeIcon className='menuicon' fill='red'/><span>Dashboard</span></MenuItem>
+        <MenuItem><HomeIcon className='menuicon'/><span>Dashboard</span></MenuItem>
         <MenuItem onClick={toogleCategory}>
-          <CategoryIcon />
+          <CategoryIcon className='menuicon' />
           <span>Stratigies</span>
           <svg className="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconOutlined">
               <path d="M7 10l5 5 5-5z" />
@@ -30,8 +31,8 @@ const Navbar = () => {
             <p>Vela</p>
             <p>Centauri</p>
           </div>
-        <MenuItem><FolderIcon /><span>Indices</span></MenuItem>
-        <MenuItem><ChatIcon /><span>Issue/Feedback</span></MenuItem>
+        <MenuItem><FolderIcon className='menuicon' /><span>Indices</span></MenuItem>
+        <MenuItem><ChatIcon className='menuicon' /><span>Issue/Feedback</span></MenuItem>
       </MenuList>
     </div>
   )

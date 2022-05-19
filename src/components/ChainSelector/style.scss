@@ -1,4 +1,34 @@
-.selector {
-  color: white;
-  padding-top: 5px;
+@import '../../scss/colors';
+
+.select-wrapper {
+  // padding-top: 5px;
+  
+  .select {
+    color: white;
+    background-color: $chart-background-color;
+    border-radius: 12px;
+    border-color: transparent;
+    height: 36px;
+  }
+}
+
+.MuiPaper-root {
+  background-color: $chart-background-color !important;
+  color: white !important;
+  margin-top: 50px;
+}
+
+.MuiSelect-icon {
+  color: white !important;
+}
+
+.MuiListItem-button:hover {
+  background-color: $background-color !important;
+}
+
+.MuiPaper-rounded {
+  border-radius: 20px !important;
+}
+span {
+  padding-left: inherit !important;
 }

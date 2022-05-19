@@ -2,7 +2,7 @@ import './style.scss'
 
 const ConnectButton = () => {
   return (
-    <button type='button' className='connect-button'>Connect Wallet</button>
+    <button className='connect-button'>Connect Wallet</button>
   )
 }
 

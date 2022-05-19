@@ -1,9 +1,13 @@
 import './style.scss'
 
-const SimpleCard = () => {
+const SimpleCard = ({IconComponent, text, value, type }) => {
   return (
     <div className="card">
-      SimpleCard
+      <span className={type}>{IconComponent}</span>
+      <div className={`data-wrapper data-wrapper-${type}`}>
+        <p className='text'>{text}</p>
+        <p className={`value-${type}`}>${value.toFixed(2)}</p>
+      </div>
     </div>
   )
 }

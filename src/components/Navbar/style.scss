@@ -4,6 +4,7 @@
 .navbar {
   width: $navbar-width;
   height: $navbar-height;
+  background: url('../../assets/navbar-under-back.svg');
 
   a {
     text-decoration: none;
@@ -39,16 +40,18 @@
 
   .sub-group {
     margin-top: -22px;
-    padding-left: 55px;
-    margin-bottom: 27px;
-    p {
-      color: $dashboard-text-color;
-      margin-bottom: -8px;
+    padding-left: 35px;
+    // margin-bottom: 27px;
+    color: $dashboard-text-color;
+
+    .MuiMenuItem-root {
+      height: 0px;
+
       &:hover {
         color: #FF4A80;
-        cursor: pointer;
       }
     }
+
   }
 
   span {

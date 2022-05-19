@@ -1,4 +1,5 @@
 import { useCallback, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { MenuItem, MenuList } from '@material-ui/core'
 
 import './style.scss'
@@ -16,7 +17,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <MenuList>
-        <MenuItem><HomeIcon className='menuicon'/><span>Dashboard</span></MenuItem>
+        <MenuItem component={Link} to='/dashboard'><HomeIcon className='menuicon'/><span>Dashboard</span></MenuItem>
         <MenuItem onClick={toogleCategory}>
           <CategoryIcon className='menuicon' />
           <span>Stratigies</span>
@@ -25,14 +26,16 @@ const Navbar = () => {
           </svg>
         </MenuItem>
           <div className='sub-group' style={{display: isOpen ? 'block' : 'none'}}>
-            <p>Torous</p>
-            <p>Phantom</p>
-            <p>Helios</p>
-            <p>Vela</p>
-            <p>Centauri</p>
+            <MenuList>
+              <MenuItem component={Link} to='/stratiges/phantom'>Phantom</MenuItem>
+              <MenuItem component={Link} to='/stratiges/helios'>Helios</MenuItem>
+              <MenuItem component={Link} to='/stratiges/vela'>Vela</MenuItem>
+              <MenuItem component={Link} to='/stratiges/centauri'>Centauri</MenuItem>
+              <MenuItem component={Link} to='/stratiges/torous'>Torous</MenuItem>
+            </MenuList>
           </div>
-        <MenuItem><FolderIcon className='menuicon' /><span>Indices</span></MenuItem>
-        <MenuItem><ChatIcon className='menuicon' /><span>Issue/Feedback</span></MenuItem>
+        <MenuItem component={Link} to='/indices'><FolderIcon className='menuicon' /><span>Indices</span></MenuItem>
+        <MenuItem component={Link} to='/feedback'><ChatIcon className='menuicon' /><span>Issue/Feedback</span></MenuItem>
       </MenuList>
     </div>
   )

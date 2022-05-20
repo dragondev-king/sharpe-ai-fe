@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom'
-
 import { ReactComponent as TwitterIcon } from '../../assets/svgs/twitter.svg'
 import { ReactComponent as DiscordIcon } from '../../assets/svgs/discord.svg'
 import { ReactComponent as EmailIcon } from '../../assets/svgs/email.svg'
@@ -9,18 +7,18 @@ import './style.scss'
 const SocialIcons = () => {
   return (
     <div className='social-icons'>
-      <Link to='https://twitter.com'>
+      <a href='https://twitter.com'>
         <TwitterIcon />
-      </Link>
-      <Link to='https://discord.com'>
+      </a>
+      <a href='https://discord.com'>
         <DiscordIcon />
-      </Link>
-      <Link to='https://email.com'>
+      </a>
+      <a href='https://email.com'>
         <EmailIcon />
-      </Link>
-      <Link to='https://book.com'>
+      </a>
+      <a href='https://book.com'>
         <BookIcon />
-      </Link>
+      </a>
     </div>
   )
 }

@@ -3,7 +3,6 @@
 
 .main {
   background-color: $background-color;
-  height: $background-height;
   &::before {
     content: '';
     background: url('./assets/svgs/navbar-under-back.svg') no-repeat;

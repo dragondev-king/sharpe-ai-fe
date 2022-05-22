@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from "react"
 
-export const useClientSize = (ref, width = 600, height = 250) => {
+export const useClientSize = (ref, width = 600, height) => {
   const [size, setSize] = useState({ width, height})
   const getClientSize = useCallback(() => {
     setSize({

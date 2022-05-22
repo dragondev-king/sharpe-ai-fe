@@ -3,6 +3,7 @@
 .MuiGrid-container {
   padding-right: 1%;
   z-index: 99;
+  padding-top: 40px;
   padding-bottom: 30px;
 }
 
@@ -18,8 +19,27 @@
     justify-content: space-between;
     padding-bottom: 3%;
 
+    @media (max-width: 1285px) {
+      display: flex;
+      flex-direction: column;
+
+      .card {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+
     &__first {
       padding-bottom: 10%;
+      @media (max-width: 1285px) {
+        display: flex;
+        flex-direction: column;
+
+        .card {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+      }
     }
   }
 

@@ -23,7 +23,7 @@ const Dashboard = () => {
       <div className="dashboardnavbar-wrapper">
         <Navbar />
         <Grid container>
-          <Grid item xs={12} md={12} lg={6}>
+          <Grid item sm={12} md={6} lg={6}>
             <div className="dashboard dashboard-left">
               <div className="card-wrapper card-wrapper__first">
                 <SimpleCard IconComponent={<DepositIcon />} type='middle' text='DEPOSITS' value={460} />
@@ -38,11 +38,11 @@ const Dashboard = () => {
                 <SimpleCard IconComponent={<ActivePositionsIcon />} type='large' text='Active Positions' value={5596.80} />
               </div>
               <div>
-                <TotalViewChart />
+                <TotalViewChart title={'Total Value Locked'}/>
               </div>
             </div>
           </Grid>
-          <Grid item xs={12} md={12} lg={6}>
+          <Grid item sm={12} md={6} lg={6}>
             <div className="dashboard dashboard-right">
               <p className="text-wrapper">Statistics</p>
               <div className="card-wrapper">

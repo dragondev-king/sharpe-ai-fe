@@ -1,7 +1,39 @@
 @import '../../../../scss/colors';
 
 .chart-wrapper {
-  background: #302C3F;
-  // height: 316px;
-  border-radius: 11px;
+  background-color: #302C3F;
+  border-radius: 12px;
+  margin-top: 15px;
+
+  .title-wrapper {
+    height: 12px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px 0 40px;
+
+    p {
+      color: #999CA3;
+      font-family: THICCCBOI;
+      font-size: 18px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+
+    .date-wrapper {
+      margin-top: 15px;
+
+      span {
+        // opacity: 5%;
+        background-color: #302C3F;
+        border-radius: 5px;
+        color: white;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .VictoryContainer {
+    border: none !important;
+  }
+
 }

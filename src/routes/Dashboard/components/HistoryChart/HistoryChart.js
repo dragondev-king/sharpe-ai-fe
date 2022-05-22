@@ -19,7 +19,7 @@ const data=[
 
 const HistoryChart = ({value, text, graphColor}) => {
   const ref = useRef()
-  const size = useClientSize(ref)
+  const size = useClientSize(ref, undefined, 150)
   return (
     <div className="history-chart">
       <Box itemRef={ref}>
@@ -30,6 +30,10 @@ const HistoryChart = ({value, text, graphColor}) => {
             parent: { border: "1px solid #eee" },
           }}
           data={data}
+          animate={{
+            duration: 2000,
+            onLoad: { duration: 1000 }
+          }}
         />
         <div className="data-wrapper">
           <p>{`$${value}`}</p>

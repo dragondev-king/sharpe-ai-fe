@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { Box } from "@material-ui/core";
-import { VictoryLine, VictoryChart, VictoryTheme } from "victory";
+import { VictoryLine, VictoryChart } from "victory";
 
 import { useClientSize } from "../../../../hooks/victory";
 import './style.scss'

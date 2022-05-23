@@ -1,4 +1,3 @@
-import { useCallback, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { MenuItem, MenuList } from '@material-ui/core'
 
@@ -9,30 +8,26 @@ import { ReactComponent as FolderIcon } from '../../assets/svgs/folder.svg'
 import {ReactComponent as ChatIcon } from '../../assets/svgs/chat.svg'
 import { ReactComponent as HomeIcon } from '../../assets/svgs/home.svg'
 
-const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false)
-  const toogleCategory = useCallback(() => {
-    setIsOpen(!isOpen)
-  }, [isOpen, setIsOpen])
+const Navbar = ({subIsOpened, onSubClick}) => {
 
   return (
     <div className="navbar">
       <MenuList>
         <MenuItem component={Link} to='/dashboard'><HomeIcon className='menuicon'/><span>Dashboard</span></MenuItem>
-        <MenuItem onClick={toogleCategory}>
+        <MenuItem onClick={onSubClick} component={Link} to='/stratigies'>
           <CategoryIcon className='menuicon' />
           <span>Stratigies</span>
           <svg className="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconOutlined">
               <path d="M7 10l5 5 5-5z" />
           </svg>
         </MenuItem>
-          <div className='sub-group' style={{display: isOpen ? 'block' : 'none'}}>
+          <div className='sub-group' style={{display: subIsOpened ? 'block' : 'none'}}>
             <MenuList>
-              <MenuItem component={Link} to='/stratiges/phantom'>Phantom</MenuItem>
-              <MenuItem component={Link} to='/stratiges/helios'>Helios</MenuItem>
-              <MenuItem component={Link} to='/stratiges/vela'>Vela</MenuItem>
-              <MenuItem component={Link} to='/stratiges/centauri'>Centauri</MenuItem>
-              <MenuItem component={Link} to='/stratiges/torous'>Torous</MenuItem>
+              <MenuItem component={Link} to='/stratigies/tarous'>Tarous</MenuItem>
+              <MenuItem component={Link} to='/stratigies/phantom'>Phantom</MenuItem>
+              <MenuItem component={Link} to='/stratigies/helios'>Helios</MenuItem>
+              <MenuItem component={Link} to='/stratigies/vela'>Vela</MenuItem>
+              <MenuItem component={Link} to='/stratigies/centauri'>Centauri</MenuItem>
             </MenuList>
           </div>
         <MenuItem component={Link} to='/indices'><FolderIcon className='menuicon' /><span>Indices</span></MenuItem>

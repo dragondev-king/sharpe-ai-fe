@@ -10,7 +10,7 @@ const Main = () => {
       <Routes>
         <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/indices' element={<Indices />} />
-        <Route path='/stratigies' element={<Stratigies />} />
+        <Route path='/stratigies/*' element={<Stratigies />} />
         <Route path='*' element={<Dashboard />}/>
       </Routes>
     </BrowserRouter>

@@ -2,12 +2,16 @@ import { Grid } from "@material-ui/core"
 
 import './style.scss'
 import DefaultLayout from "../../../../components/DefaultLayout"
+import ComingSoonCard from "../../../../components/ComingSoonCard"
 import TaurusCard from "./components/TaurusCard"
+
 import UsdcLogo  from '../../../../assets/svgs/chains/usdc-logo.svg'
 import DaiLogo from '../../../../assets/svgs/chains/dai-logo.svg'
 import FraxLogo from '../../../../assets/svgs/chains/frax-logo.svg'
 import PolygonMaticLogo from '../../../../assets/svgs/chains/polygon-matic-logo.svg'
-
+import UniswapLogo from '../../../../assets/svgs/chains/uniswap-logo.svg'
+import EthereumLogo from '../../../../assets/svgs/chains/ethereum-logo.svg'
+import BitcoinLogo from '../../../../assets/svgs/chains/bitcoin-logo.svg'
 
 const TaurusContent = () => {
   return (
@@ -21,6 +25,15 @@ const TaurusContent = () => {
         </Grid>
         <Grid item lg={4} md={6} sm={12} xs={12}>
           <TaurusCard name={'miMATIC'} logoLeft={UsdcLogo} logoRight={PolygonMaticLogo}/>
+        </Grid>
+        <Grid item lg={4} md={6} sm={12} xs={12}>
+          <ComingSoonCard logo={UniswapLogo} />
+        </Grid>
+        <Grid item lg={4} md={6} sm={12} xs={12}>
+          <ComingSoonCard logo={EthereumLogo} />
+        </Grid>
+        <Grid item lg={4} md={6} sm={12} xs={12}>
+          <ComingSoonCard logo={BitcoinLogo} />
         </Grid>
       </Grid>
     </div>

@@ -1,5 +1,4 @@
 import { useState, useCallback } from "react"
-import { Grid } from "@material-ui/core"
 
 import Header from '../Header'
 import Navbar from "../Navbar"
@@ -18,9 +17,7 @@ const DefaultLayout = ({component}) => {
       <Header />
       <div className="dashboardnavbar-wrapper">
         <Navbar subIsOpened={subIsOpened} onSubClick={handleSubClick}/>
-        <Grid container>
-          {component}
-        </Grid>
+        {component}
       </div>
     </>
   )

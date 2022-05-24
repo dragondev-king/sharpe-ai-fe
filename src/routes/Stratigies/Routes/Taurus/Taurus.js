@@ -1,4 +1,4 @@
-import { colors, Grid } from "@material-ui/core"
+import { Grid } from "@material-ui/core"
 
 import './style.scss'
 import DefaultLayout from "../../../../components/DefaultLayout"

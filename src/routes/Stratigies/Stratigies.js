@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
-import Taurus from "./routes/Taurus";
-import Phantom from './routes/Phantom';
+import Taurus from "./Routes/Taurus";
+import Phantom from './Routes/Phantom';
 
 const Stratigies = () => {
   return (

@@ -6,7 +6,7 @@ import PhantomCard from "./components/PhantomCard";
 import "./style.scss";
 import { cardColors } from "../../../../utils/helpers";
 
-import UsdcLogo from "../../../../assets/svgs/chains/usdc-logo.svg";
+import UsdcLogo from "../../../../assets/svgs/chains/usdc-logo.svg";  
 import DaiLogo from "../../../../assets/svgs/chains/dai-logo.svg";
 import PolygonMaticLogo from "../../../../assets/svgs/chains/polygon-matic-logo.svg";
 import UniswapLogo from "../../../../assets/svgs/chains/uniswap-logo.svg";

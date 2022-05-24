@@ -1,9 +1,10 @@
-import { Grid } from "@material-ui/core"
+import { colors, Grid } from "@material-ui/core"
 
 import './style.scss'
 import DefaultLayout from "../../../../components/DefaultLayout"
 import ComingSoonCard from "../../../../components/ComingSoonCard"
 import TaurusCard from "./components/TaurusCard"
+import { cardColors } from "../../../../utils/helpers"
 
 import UsdcLogo  from '../../../../assets/svgs/chains/usdc-logo.svg'
 import DaiLogo from '../../../../assets/svgs/chains/dai-logo.svg'
@@ -27,13 +28,13 @@ const TaurusContent = () => {
           <TaurusCard name={'miMATIC'} logoLeft={UsdcLogo} logoRight={PolygonMaticLogo}/>
         </Grid>
         <Grid item lg={4} md={6} sm={12} xs={12}>
-          <ComingSoonCard logo={UniswapLogo} />
+          <ComingSoonCard logo={UniswapLogo} color={cardColors.uniswap} />
         </Grid>
         <Grid item lg={4} md={6} sm={12} xs={12}>
-          <ComingSoonCard logo={EthereumLogo} />
+          <ComingSoonCard logo={EthereumLogo} color={cardColors.ethereum} />
         </Grid>
         <Grid item lg={4} md={6} sm={12} xs={12}>
-          <ComingSoonCard logo={BitcoinLogo} />
+          <ComingSoonCard logo={BitcoinLogo} color={cardColors.bitcoin} />
         </Grid>
       </Grid>
     </div>

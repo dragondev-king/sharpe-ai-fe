@@ -23,7 +23,7 @@ const Dashboard = () => {
       <div className="dashboardnavbar-wrapper">
         <Navbar />
         <Grid container>
-          <Grid item xs={12} md={12} lg={7}>
+          <Grid item sm={12} md={6} lg={6}>
             <div className="dashboard dashboard-left">
               <div className="card-wrapper card-wrapper__first">
                 <SimpleCard IconComponent={<DepositIcon />} type='middle' text='DEPOSITS' value={460} />
@@ -38,19 +38,21 @@ const Dashboard = () => {
                 <SimpleCard IconComponent={<ActivePositionsIcon />} type='large' text='Active Positions' value={5596.80} />
               </div>
               <div>
-                <TotalViewChart />
+                <TotalViewChart title={'Total Value Locked'}/>
               </div>
             </div>
           </Grid>
-          <Grid item xs={12} md={12} lg={5}>
+          <Grid item sm={12} md={6} lg={6}>
             <div className="dashboard dashboard-right">
-              Statistics
+              <p className="text-wrapper">Statistics</p>
               <div className="card-wrapper">
                 <SimpleCard IconComponent={<VaultsIcon />} type='small' text='DEPOSITS' value={12} />
                 <SimpleCard IconComponent={<TotalValueLockedIcon />} type='small' text='DEPOSITS' value={250000} />
               </div>
-              <HistoryChart />
-              <HistoryChart />
+              <div className="history-chart-wrapper">
+                <HistoryChart value={6250} text='Income Generated' graphColor='#F9896B' />
+                <HistoryChart value={40250} text='Volume' graphColor='#FC75FF'/>
+              </div>
             </div>
           </Grid>
         </Grid>

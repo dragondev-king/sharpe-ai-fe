@@ -16,7 +16,7 @@ import { ReactComponent as TotalValueLockedIcon } from "../../assets/svgs/total-
 
 const DashboardContent = () => {
   return (
-    <>
+    <Grid container>
       <Grid item sm={12} md={6} lg={6}>
         <div className="dashboard dashboard-left">
           <div className="card-wrapper card-wrapper__first">
@@ -93,7 +93,7 @@ const DashboardContent = () => {
           </div>
         </div>
       </Grid>
-    </>
+    </Grid>
   );
 };
 

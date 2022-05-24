@@ -18,10 +18,10 @@ const PhantomContent = () => {
     <div className="phantom-container">
       <Grid container>
         <Grid item lg={4} md={6} sm={12} xs={12}>
-          <PhantomCard logo={UsdcLogo} color={cardColors.usdc} name="T-USDC-P-AVAX" />
+          <PhantomCard title={'PUT-SELLING'} logo={UsdcLogo} color={cardColors.usdc} name="T-USDC-P-AVAX" />
         </Grid>
         <Grid item lg={4} md={6} sm={12} xs={12}>
-          <PhantomCard logo={PolygonMaticLogo} color={cardColors.polygon} name="WMATIC" />
+          <PhantomCard title={'COVERED-CALL'} logo={PolygonMaticLogo} color={cardColors.polygon} name="WMATIC" />
         </Grid>
         <Grid item lg={4} md={6} sm={12} xs={12}>
           <ComingSoonCard color={cardColors.bitcoin} logo={BitcoinLogo} />

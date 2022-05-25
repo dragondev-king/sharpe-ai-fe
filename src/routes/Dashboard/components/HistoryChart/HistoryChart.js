@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { Box } from "@material-ui/core";
 import { VictoryLine } from "victory";
+import CountUp  from 'react-countup';
 
 import { useClientSize } from "../../../../hooks/victory";
 import "./style.scss";
@@ -36,7 +37,7 @@ const HistoryChart = ({value, text, graphColor}) => {
           }}
         />
         <div className="data-wrapper">
-          <p>{`$${value}`}</p>
+          <p>$<CountUp end={value} duration={1} /></p>
           <h4>{text}</h4>
         </div>
       </Box>

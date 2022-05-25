@@ -2,8 +2,10 @@ import { createContext } from "react";
 
 export const NavbarContext = createContext({
   subIsOpened: false,
-  selectedNumber: 1,
   setSubIsOpened: () => {},
-  setSelectedNumber: () => {}
+  selectedNumber: 1,
+  setSelectedNumber: () => {},
+  headerText: '',
+  setHeaderText: () => {}
 })
 

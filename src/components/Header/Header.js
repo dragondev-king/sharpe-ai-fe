@@ -1,18 +1,22 @@
+import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 
+import { NavbarContext } from '../../context/NavbarContext'
 import ChainSelector from '../ChainSelector'
 import ConnectButton from '../ConnectButton'
 import './style.scss'
 import { ReactComponent as Logo } from '../../assets/svgs/logo.svg'
 
 const Header = () => {
+  const { headerText } = useContext(NavbarContext)
+
   return (
     <div className="header">
       <div className='header-left'>
         <Link to='/'>
           <Logo className='logo'/>
         </Link>
-        <div className='dashboard-text'>Dashboard</div>
+        <div className='dashboard-text'>{headerText}</div>
       </div>
       <div className='header-right'>
         <ChainSelector />

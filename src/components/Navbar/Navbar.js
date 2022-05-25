@@ -11,20 +11,25 @@ import {ReactComponent as ChatIcon } from '../../assets/svgs/chat.svg'
 import { ReactComponent as HomeIcon } from '../../assets/svgs/home.svg'
 
 const Navbar = () => {
-  const {subIsOpened, setSubIsOpened} = useContext(NavbarContext)
+  const {subIsOpened, setSubIsOpened, setHeaderText} = useContext(NavbarContext)
   
-  const handleNavClick = useCallback(() => {
+  const handleNavClick = useCallback((e) => {
     setSubIsOpened(false)
-  }, [setSubIsOpened])
+    setHeaderText(e.target.innerText)
+  }, [setSubIsOpened, setHeaderText])
   
   const handleSubClick = useCallback(() => {
     setSubIsOpened(!subIsOpened)
   }, [subIsOpened, setSubIsOpened])
 
+  const handleSubItemClick = useCallback((e) => {
+    setHeaderText(e.target.innerText)
+  }, [setHeaderText])
+
   return (
     <div className="navbar">
       <MenuList>
-        <MenuItem onClick={handleNavClick} component={Link} to='/dashboard'><HomeIcon className='menuicon'/><span>Dashboard</span></MenuItem>
+        <MenuItem onClick={handleNavClick} component={Link} to='/dashboard' key={'kkk'} ><HomeIcon className='menuicon'/><span>Dashboard</span></MenuItem>
         <MenuItem onClick={handleSubClick} component={Link} to='/stratigies'>
           <CategoryIcon className='menuicon' />
           <span>Stratigies</span>
@@ -34,11 +39,11 @@ const Navbar = () => {
         </MenuItem>
           <div className='sub-group' style={{display: subIsOpened ? 'block' : 'none'}}>
             <MenuList>
-              <MenuItem component={Link} to='/stratigies/tarous'>Tarous</MenuItem>
-              <MenuItem component={Link} to='/stratigies/phantom'>Phantom</MenuItem>
-              <MenuItem component={Link} to='/stratigies/helios'>Helios</MenuItem>
-              <MenuItem component={Link} to='/stratigies/vela'>Vela</MenuItem>
-              <MenuItem component={Link} to='/stratigies/centauri'>Centauri</MenuItem>
+              <MenuItem onClick={handleSubItemClick} component={Link} to='/stratigies/taurus'>Taurus</MenuItem>
+              <MenuItem onClick={handleSubItemClick} component={Link} to='/stratigies/phantom'>Phantom</MenuItem>
+              <MenuItem onClick={handleSubItemClick} component={Link} to='/stratigies/helios'>Helios</MenuItem>
+              <MenuItem onClick={handleSubItemClick} component={Link} to='/stratigies/vela'>Vela</MenuItem>
+              <MenuItem onClick={handleSubItemClick} component={Link} to='/stratigies/centauri'>Centauri</MenuItem>
             </MenuList>
           </div>
         <MenuItem onClick={handleNavClick} component={Link} to='/indices'><FolderIcon className='menuicon' /><span>Indices</span></MenuItem>

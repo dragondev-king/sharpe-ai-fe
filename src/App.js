@@ -8,12 +8,17 @@ import './App.scss';
 function App() {
   const [subIsOpened, setSubIsOpened] = useState(false)
   const [selectedNumber, setSelectedNumber] = useState(1)
+  const [headerText, setHeaderText] = useState('Dashboard')
   const value = useMemo(() => ({
     subIsOpened,
     setSubIsOpened,
     selectedNumber,
-    setSelectedNumber
-  }), [subIsOpened, selectedNumber])
+    setSelectedNumber,
+    headerText,
+    setHeaderText
+  }), [subIsOpened, selectedNumber, headerText])
+
+
   return (
     <NavbarContext.Provider value={value}>
       <div className='main'>

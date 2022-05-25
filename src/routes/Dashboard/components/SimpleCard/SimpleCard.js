@@ -1,3 +1,5 @@
+import CountUp from 'react-countup'
+
 import './style.scss'
 
 const SimpleCard = ({IconComponent, text, value, type }) => {
@@ -6,7 +8,7 @@ const SimpleCard = ({IconComponent, text, value, type }) => {
       <span className={type}>{IconComponent}</span>
       <div className={`data-wrapper data-wrapper-${type}`}>
         <p className='text'>{text}</p>
-        <p className={`value-${type}`}>${value.toFixed(2)}</p>
+        <p className={`value-${type}`}>$<CountUp end={value.toFixed(2)} duration={1} /></p>
       </div>
     </div>
   )

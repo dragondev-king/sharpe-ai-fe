@@ -1,6 +1,8 @@
 @import '../../scss/variables';
 @import '../../scss/colors';
 
+$hover-color: #FF4A80;
+
 .navbar {
   width: $navbar-width;
   min-height: $navbar-height;
@@ -30,13 +32,13 @@
     }
     &:hover {
       .menuicon {
-        color: #FF4A80;
+        color: $hover-color;
       }
       svg {
-        fill: #FF4A80;
+        fill: $hover-color;
       }
       span {
-        color: #FF4A80;
+        color: $hover-color;
       }
     }
   }
@@ -56,7 +58,7 @@
       height: 0px;
 
       &:hover {
-        color: #FF4A80;
+        color: $hover-color;
       }
     }
 
@@ -69,5 +71,18 @@
     line-height: 23px;
     letter-spacing: 0em;
     text-align: left;
+  }
+}
+
+.selected {
+  color: $hover-color !important;
+  .menuicon {
+    color: $hover-color;
+  }
+  svg {
+    fill: $hover-color !important;
+  }
+  span {
+    color: $hover-color;
   }
 }

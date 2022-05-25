@@ -7,3 +7,15 @@ export const cardColors = {
   ethereum: '#202438',
   dai: '#6a370c38'
 }
+
+export const menus = {
+  dashboard: 'Dashboard',
+  stratigies: 'Stratigies',
+  taurus: 'Taurus',
+  phantom: 'Phantom',
+  helios: 'Helios',
+  vela: 'Vela',
+  centauri: 'Centauri',
+  indicies: 'Indices',
+  issueAndFeedback: 'Issue/Feedback'
+}

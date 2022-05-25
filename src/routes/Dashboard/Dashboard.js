@@ -73,13 +73,13 @@ const DashboardContent = () => {
             <SimpleCard
               IconComponent={<VaultsIcon />}
               type="small"
-              text="DEPOSITS"
+              text="VAULTS"
               value={12}
             />
             <SimpleCard
               IconComponent={<TotalValueLockedIcon />}
               type="small"
-              text="DEPOSITS"
+              text="TOTAL VALUE LOCKED"
               value={250000}
             />
           </div>

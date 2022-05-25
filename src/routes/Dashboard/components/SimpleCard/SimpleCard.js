@@ -2,7 +2,7 @@ import './style.scss'
 
 const SimpleCard = ({IconComponent, text, value, type }) => {
   return (
-    <div className="card">
+    <div className={`card card-${type}`}>
       <span className={type}>{IconComponent}</span>
       <div className={`data-wrapper data-wrapper-${type}`}>
         <p className='text'>{text}</p>

@@ -35,7 +35,6 @@ const Navbar = () => {
 
   const handleSubClassName = (() => {
     const subNames = [menus.taurus, menus.phantom, menus.helios, menus.vela, menus.centauri]
-    console.log(subNames.includes(headerText), '----')
     if(subNames.includes(headerText)) return 'selected'
     else return ''
   })

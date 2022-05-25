@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import ChainSelector from '../ChainSelector'
 import ConnectButton from '../ConnectButton'
 import './style.scss'
@@ -7,7 +9,9 @@ const Header = () => {
   return (
     <div className="header">
       <div className='header-left'>
-        <Logo className='logo'/>
+        <Link to='/'>
+          <Logo className='logo'/>
+        </Link>
         <div className='dashboard-text'>Dashboard</div>
       </div>
       <div className='header-right'>

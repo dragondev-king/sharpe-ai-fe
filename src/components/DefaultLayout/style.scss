@@ -1,5 +1,9 @@
 @import '../../scss/mixins';
 
+.main-container {
+  @include default-divider;
+}
+
 .MuiGrid-container {
   padding-right: 1%;
   z-index: 99;
@@ -8,5 +12,6 @@
 }
 
 .dashboardnavbar-wrapper {
-  @include default-divider;
+  display: flex;
+  flex-direction: column;
 }

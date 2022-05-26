@@ -5,13 +5,13 @@ import './style.scss'
 
 const DefaultLayout = ({component}) => {
   return (
-    <>
-      <Header />
+    <div className='main-container'>
+      <Navbar/>
       <div className="dashboardnavbar-wrapper">
-        <Navbar/>
+        <Header />
         {component}
       </div>
-    </>
+    </div>
   )
 }
 

@@ -7,16 +7,16 @@ import './style.scss'
 const SocialIcons = () => {
   return (
     <div className='social-icons'>
-      <a href='https://twitter.com'>
+      <a href='https://twitter.com/sharpe_ai'>
         <TwitterIcon />
       </a>
-      <a href='https://discord.com'>
+      <a href='https://discord.com/invite/tFAvMTw6Hx'>
         <DiscordIcon />
       </a>
-      <a href='https://email.com'>
+      <a href='hello@sharpe.ai'>
         <EmailIcon />
       </a>
-      <a href='https://book.com'>
+      <a href='https://docs.sharpe.ai/'>
         <BookIcon />
       </a>
     </div>

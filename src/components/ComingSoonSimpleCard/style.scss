@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  .coming-soon-simple-card-wrapper {
+    background-color: rgba($color: #4F46BA, $alpha: 0.1);
+    border-radius: 15px;
+    width: 688px;
+    height: 106px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      font-family: Manrope;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 44px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #BDBDBD;
+    }
+  }
+}
+

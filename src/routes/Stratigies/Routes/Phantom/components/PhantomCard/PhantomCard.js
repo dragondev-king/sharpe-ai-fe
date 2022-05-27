@@ -15,8 +15,8 @@ const PhantomCard = ({
 }) => {
   return (
     <div className="card-container">
-      <div className="title-wrapper" style={{backgroundColor: color}}><span>{title}</span></div>
       <div className="card-wrapper"  style={{backgroundColor: color}}>
+        <div className="title-wrapper" style={{backgroundColor: color}}><span>{title}</span></div>
         <div className="card-header">
           <div className="values-wrapper">
             <span>{value ? value : 0} USDC</span>

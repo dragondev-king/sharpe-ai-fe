@@ -8,7 +8,6 @@ import './style.scss'
 import { menus } from '../../utils/helpers'
 import { ReactComponent as CategoryIcon } from '../../assets/svgs/category.svg'
 import { ReactComponent as FolderIcon } from '../../assets/svgs/folder.svg'
-import {ReactComponent as ChatIcon } from '../../assets/svgs/chat.svg'
 import { ReactComponent as HomeIcon } from '../../assets/svgs/home.svg'
 import { ReactComponent as Logo } from '../../assets/svgs/logo.svg'
 
@@ -68,7 +67,6 @@ const Navbar = () => {
                 </MenuList>
               </div>
             <MenuItem onClick={handleNavClick} component={Link} to='/indices' className={handleClassName(menus.indicies)}><FolderIcon className='menuicon' /><span>Indices</span></MenuItem>
-            <MenuItem onClick={handleNavClick} component={Link} to='/issue-feedback' className={handleClassName(menus.issueAndFeedback)}><ChatIcon className='menuicon' /><span>Issue/Feedback</span></MenuItem>
           </MenuList>
           <SocialIcons />
         </div>

@@ -8,6 +8,7 @@
     background-color: $chart-background-color;
     border-radius: 12px;
     border-color: transparent;
+    width: 160px;
     height: 36px;
   }
 }
@@ -16,6 +17,7 @@
   background-color: $chart-background-color !important;
   color: white !important;
   margin-top: 50px;
+  top: 25px !important;
 }
 
 .MuiSelect-icon {

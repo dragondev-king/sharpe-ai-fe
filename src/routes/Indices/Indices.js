@@ -1,9 +1,10 @@
 import DefaultLayout from "../../components/DefaultLayout"
+import ComingSoonSimpleCard from "../../components/ComingSoonSimpleCard"
 
 const IndicesContent = () => {
   return (
     <>
-      Indices
+      <ComingSoonSimpleCard />
     </>
   )
 }

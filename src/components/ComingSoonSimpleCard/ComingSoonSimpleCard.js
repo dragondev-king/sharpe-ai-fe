@@ -4,7 +4,7 @@ const ComingSoonSimpleCard = () => {
   return (
     <div className='container'>
       <div className="coming-soon-simple-card-wrapper">
-        <span>Coming Soon simple card</span>
+        <span>COMING SOON</span>
       </div>
     </div>
   )

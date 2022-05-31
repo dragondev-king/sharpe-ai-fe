@@ -2,7 +2,7 @@
 
 .main-container {
   @include default-divider;
-  height: 100%;
+  min-height: 800px;
 }
 
 .MuiGrid-container {

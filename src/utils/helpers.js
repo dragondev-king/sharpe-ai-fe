@@ -19,3 +19,5 @@ export const menus = {
   indicies: 'Indices',
   issueAndFeedback: 'Issue/Feedback'
 }
+
+export const screenHeight = window.innerHeight

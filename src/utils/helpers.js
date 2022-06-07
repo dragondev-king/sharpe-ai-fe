@@ -1,3 +1,18 @@
+import { Store } from 'react-notifications-component'
+
+export const showNotification = ({title, message, type, insert, container}) => {
+  Store.addNotification({
+    title,
+    message,
+    type,
+    insert,
+    container,
+    dismiss: {
+      duration: 2000,
+    }
+  })
+}
+
 export const cardColors = {
   default: '#1a274b',
   usdc: '#231b46',

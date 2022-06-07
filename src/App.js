@@ -9,7 +9,7 @@ import './App.scss';
 const config = {
   readOnlyChainId: Mainnet.chainId,
   readOnlyUrls: {
-    [Polygon.chainId]: 'https://polygon.infura.io/v3/62687d1a985d4508b2b7a24827551934'
+    [Polygon.chainId]:'https://matic-mumbai.chainstacklabs.com',
   },
 }
 

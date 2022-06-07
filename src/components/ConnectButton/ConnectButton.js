@@ -14,7 +14,7 @@ const web3Modal = new Web3Modal({
 
 const ConnectButton = () => {
   const [provider, setProvider] = useState();
-  const [library, setLibrary] = useState();
+  // const [library, setLibrary] = useState();
   const [account, setAccount] = useState();
   const [network, setNetwork] = useState();
   const [connected, setConnected] = useState(false)
@@ -25,23 +25,20 @@ const ConnectButton = () => {
       const library = new ethers.providers.Web3Provider(provider);
       const accounts = await library.listAccounts();
       const network = await library.getNetwork();
-      if(network.chainId !== 137) {
-          showNotification({
-          title: 'Warning',
-          message: 'Unsupported Network: Please change wallet network to Polygon',
-          type: 'warning',
-          insert: 'top',
-          container: 'top-right'
-        })
-        return
-      }
       setProvider(provider);
-      setLibrary(library);
+      // setLibrary(library);
       setConnected(true)
+      showNotification({
+        title: 'Warning',
+        message: 'Wallet Connected',
+        type: 'success',
+        insert: 'top',
+        container: 'top-right'
+      })
       if (accounts) setAccount(accounts[0]);
-      setNetwork(network);
+        setNetwork(network);
     } catch (error) {
-      console.error(error);
+      console.log(error)
     }
   }, [])
 
